@@ -1,0 +1,12 @@
+.gameStateDisplayRed {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+
+.gameStateDisplayBlue {
+    @extend .gameStateDisplayRed;
+    color: blue;
+}

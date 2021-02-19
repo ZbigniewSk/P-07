@@ -1,0 +1,17 @@
+@import './Header.module.scss';
+//$controlPanelColor: rgb(238, 238, 238);
+
+.container {
+    width: 300px;
+    margin: 10px auto 10px auto;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    background-color: $navBarColor;
+    display: grid;
+    grid-template-columns: auto 60px 60px 60px 20px 60px auto;
+    grid-template-rows: 1px 60px 60px 60px 1px;
+    box-shadow: 5px 5px 10px $navBarColor;
+}
