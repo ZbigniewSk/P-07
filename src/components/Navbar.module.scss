@@ -1,0 +1,48 @@
+@import './Header.module.scss';
+
+.wrapper {
+   display: flex;
+}
+
+.navItem {
+    margin: 20px 0px 10px 30px;
+    &:hover .dropdown {
+        display: block;
+    }
+    &Link {
+        text-decoration: none;
+        color: greenyellow;
+        &Active {
+            font-weight: bold;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.dropdown {
+    display: none;
+    padding-top: 12px;
+    margin-left: -5px;
+    position: absolute;
+    z-index: 1;
+    background-color: $navBarColor;
+    box-shadow: 5px 5px 10px $navBarColor;
+}
+
+.dropdownLink {
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    color: greenyellow;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    &:hover {
+        text-decoration: underline;
+    }
+    &Active {
+        font-weight: bold;
+    }
+}
+

@@ -1,0 +1,118 @@
+@import 'ControlPanel.module.scss';
+
+$controlButtonColor: blue;
+
+.start {
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    //border: 2px solid grey;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.arrowLeft {
+    padding: 0%;
+    height: 0;
+    width: 0;
+    border-right: 50px solid $controlButtonColor;
+    border-left: 1px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-radius: 2px;
+}
+
+.arrowRight {
+    padding: 0%;
+    height: 0;
+    width: 0;
+    border-left: 50px solid $controlButtonColor;
+    border-right: 1px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-radius: 2px;
+}
+
+.arrowUp {
+    padding: 0%;
+    height: 0;
+    width: 0;
+    border-bottom: 50px solid $controlButtonColor;
+    border-top: 1px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 2px;
+}
+
+.arrowDown {
+    padding: 0%;
+    height: 0;
+    width: 0;
+    border-top: 50px solid $controlButtonColor;
+    border-bottom: 1px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 2px;
+}
+
+.arrowButton {
+    border-radius: 10px;
+    background-color: $controlButtonColor;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.left {
+   // @extend .arrowLeft;
+    @extend .arrowButton;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.up {
+    //@extend .arrowUp;
+    @extend .arrowButton;
+    margin: 15px 0px -15px 0px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.down {
+   // @extend .arrowDown;
+   @extend .arrowButton;
+    margin: -15px 0px 15px 0px;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.right {
+   // @extend .arrowRight;
+   @extend .arrowButton;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.turn {
+    margin: 15px 0px -15px 0px;
+    grid-column-start: 6;
+    grid-row-start: 2;
+    background-color: orange;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.next {
+    margin: -15px 0px 15px 0px;
+    grid-column-start: 6;
+    grid-row-start: 4;
+    background-color: brown;
+    border-radius: 10px;
+    font-weight: bold;
+}
